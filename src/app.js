@@ -13,7 +13,7 @@ function btn(text, link) {
         margin-top:10px;
         border-radius:5px;
         border:none;
-        font-family:'Space Mono',monospace,sans-serif;
+        font-family:'DSans Regular','Lato',sans-serif;
     }
     .btn:hover {
         background-color: rgb(84, 57, 159);
@@ -35,7 +35,7 @@ function btn2(text, link) {
         border-radius:5px;
         border:none;
         color:white;
-        font-family:'Space Mono',monospace,sans-serif;
+        font-family:'DSans Regular','Lato',sans-serif;
     }
     .btn2:hover {
         background-color:#151c25;
@@ -57,17 +57,17 @@ render('app',
     <br><br>${btn("Our GitHub")}${btn2("Docs")}
     `,
     `
-    @import url(https://fonts.googleapis.com/css2?family=Space+Mono:wght@100;200;300;400;500;600;700&display=swap);
+    @import url('https://dsans.davidstudios.uk/css2.css');
     @import url(https://fonts.googleapis.com/css2?family=Lato:wght@100;200;300;400;500;600;800;900&display=swap);
     :root {
         margin:10px;
         background-color:#0d1116;
         color:#e6edf3;
         font-size:1.2rem;
-        font-family:'Lato',Arial,sans-serif;
+        font-family:'DSans Regular',Arial,sans-serif;
     }
     .ice-cream-js {
-        font-family:'Space Mono',monospace,'Lato',sans-serif;
+        font-family:'DSans Bold','Lato',sans-serif;
         color:white;
         font-size:3rem;
     }
