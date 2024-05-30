@@ -1,7 +1,7 @@
 import render from './lib/ice-cream.js';
 
-const docsLink = "https://github.com/ice-cream-js/icecream-js/wiki/Documentation#documentation";
-const githubLink = "https://github.com/ice-cream-js/";
+const docsLink = "https://github.com/ice-cream-js/icecream-js/wiki/Documentation#documentation"
+const githubLink = "https://github.com/ice-cream-js/"
 
 function btn(text, link) {
     return (`
