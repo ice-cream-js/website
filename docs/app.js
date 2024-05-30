@@ -1,7 +1,7 @@
 import render from './lib/ice-cream.js';
 
-const docsLink = "https://github.com/ice-cream-js/icecream-js/wiki/Documentation#documentation"
-const githubLink = "https://github.com/ice-cream-js/"
+const docsLink = "https://docs.icecream-js.pages.dev"
+const githubLink = "https://gh.icecream-js.pages.dev"
 
 function btn(text, link) {
     return (`
@@ -16,7 +16,7 @@ function btn(text, link) {
         font-family:'DSans Regular','Lato',sans-serif;
     }
     .btn:hover {
-        background-color: rgb(84, 57, 159);
+        background-color: z;
         cursor: pointer;
         color:white;
     }
@@ -39,7 +39,6 @@ function btn2(text, link) {
     }
     .btn2:hover {
         background-color:#151c25;
-        color:black;
         cursor: pointer;
     }
     </style>
@@ -51,24 +50,30 @@ render('app',
     <div id="bar">
     <img src="./assets/logo.svg" class="logo"><a href=${docsLink} target="_blank">Docs</a><a href=${githubLink} target="_blank">GitHub</a><a href="https://github.com/ice-cream-js/icecream-cli" target="_blank">CLI</a>
     </div>
-
-    <h1 class="ice-cream-js">Ice Cream JS.</h1>
+    <h1 class="ice-cream-js">Sweeten your <br>workflow with<br>Ice Cream <span class="js-text">JS</span></h1>
     Ice Cream is a simple JavaScript library to <br>render HTML and CSS.
-    <br><br>${btn("Our GitHub")}${btn2("Docs")}
+    <br><br>${btn("Our GitHub", githubLink)}${btn2("Docs", docsLink)}
+    <br><img src="./assets/logo2.png" id="logo">
+    
     `,
     `
     @import url('https://dsans.davidstudios.uk/css2.css');
     @import url(https://fonts.googleapis.com/css2?family=Lato:wght@100;200;300;400;500;600;800;900&display=swap);
     :root {
-        margin:10px;
-        background-color:#0d1116;
-        color:#e6edf3;
+        margin:15px;
+        background-color:#fffff;
+        color:#0d1116;
         font-size:1.2rem;
         font-family:'DSans Regular',Arial,sans-serif;
     }
+    .js-text {
+        background-color:#f59e0b;
+        padding:5px 10px;
+        border-radius:5px;
+    }
     .ice-cream-js {
         font-family:'DSans Bold','Lato',sans-serif;
-        color:white;
+        color:black;
         font-size:3rem;
     }
     .logo {
@@ -76,12 +81,28 @@ render('app',
         border-radius:1.5px;
         margin-right:50px;
     }
+    @keyframes spin {
+      0% {
+        transform rotate(0deg)
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+    #logo {
+        position:relative;
+        left:50%;
+        bottom:300px;
+        overflow:hidden;
+        animation: spin 5s ease 0s infinite normal none;
+    }
     #bar {
         background-color:#232e3c;
         border-radius:5px;
         padding:5px;
         opacity:60%;
         margin-bottom:50px;
+        text-align: center;
     }
     a {
         margin-right:30px;
