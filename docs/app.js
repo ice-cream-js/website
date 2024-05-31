@@ -2,7 +2,7 @@ import render from './lib/ice-cream.js';
 
 const docsLink = "https://icecream.js.org/docs"
 const githubLink = "https://icecream.js.org/github"
-
+const cliLink = "https://icecream.js.org/cli"
 function btn(text, link) {
     return (`
     <a href=${link}><button class="btn">${text}</button></a>
@@ -48,7 +48,7 @@ function btn2(text, link) {
 render('app',
     `
     <div id="bar">
-    <img src="./assets/logo.svg" class="logo"><a href=${docsLink} target="_blank">Docs</a><a href=${githubLink} target="_blank">GitHub</a><a href="https://github.com/ice-cream-js/icecream-cli" target="_blank">CLI</a>
+    <img src="./assets/logo.svg" class="logo"><a href=${docsLink} target="_blank">Docs</a><a href=${githubLink} target="_blank">GitHub</a><a href=${cliLink} target="_blank">CLI</a>
     </div>
     <h1 class="ice-cream-js">Sweeten your <br>workflow with<br>Ice Cream <span class="js-text">JS</span></h1>
     Ice Cream is a simple JavaScript library to <br>render HTML and CSS.
